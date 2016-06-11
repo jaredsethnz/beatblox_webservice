@@ -31,7 +31,7 @@ class MySQL
        }
        else
        {
-        echo "Connect Success!";
+        //echo "Connect Success!";
        }
   }
 
@@ -48,7 +48,7 @@ class MySQL
     mysqli_query( $this->dbConn, "set character_set_results='utf8'"); 
      if (!$queryResource = mysqli_query($this->dbConn, $sql ))
      {
-      echo "ERRORRRRRRR";
+      //echo "ERRORRRRRRR";
       trigger_error ( 'Query Failed: <br>' . mysqli_error($this->dbConn ) . '<br> SQL: ' . $sql );
       return false;
      }
